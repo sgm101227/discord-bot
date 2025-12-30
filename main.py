@@ -64,7 +64,7 @@ async def 추첨(interaction: discord.Interaction, 주제: str):
 
 @client.event
 async def on_ready():
-    await tree.sync()
+    await tree.sync(guild=discord.Object(id=1319606110973460490))
     print("봇 준비완료")
 
 client.run(os.environ["DISCORD_TOKEN"])
